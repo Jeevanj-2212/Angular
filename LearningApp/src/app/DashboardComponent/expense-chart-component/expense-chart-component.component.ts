@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './expense-chart-component.component.html',
   styleUrls: ['./expense-chart-component.component.scss']
 })
-export class ExpenseChartComponentComponent implements OnInit {
+export class ExpenseChartComponent implements OnInit {
 
   constructor() { }
 

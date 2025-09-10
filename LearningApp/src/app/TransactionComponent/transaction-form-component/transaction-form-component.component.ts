@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './transaction-form-component.component.html',
   styleUrls: ['./transaction-form-component.component.scss']
 })
-export class TransactionFormComponentComponent implements OnInit {
+export class TransactionFormComponent implements OnInit {
 
   constructor() { }
 
