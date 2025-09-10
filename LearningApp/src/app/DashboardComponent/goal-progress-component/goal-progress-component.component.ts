@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './goal-progress-component.component.html',
   styleUrls: ['./goal-progress-component.component.scss']
 })
-export class GoalProgressComponentComponent implements OnInit {
+export class GoalProgressComponent implements OnInit {
 
   constructor() { }
 

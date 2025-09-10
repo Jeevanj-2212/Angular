@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './goal-form-component.component.html',
   styleUrls: ['./goal-form-component.component.scss']
 })
-export class GoalFormComponentComponent implements OnInit {
+export class GoalFormComponent implements OnInit {
 
   constructor() { }
 
