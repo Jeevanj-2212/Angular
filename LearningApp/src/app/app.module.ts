@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar-component/navbar-component.component';
+
 import { SummaryCardComponent } from './DashboardComponent/summary-card-component/summary-card-component.component';
 import { ExpenseChartComponent } from './DashboardComponent/expense-chart-component/expense-chart-component.component';
 import { GoalProgressComponent } from './DashboardComponent/goal-progress-component/goal-progress-component.component';
@@ -13,11 +13,11 @@ import { GoalFormComponent } from './GoalTrackerComponent/goal-form-component/go
 import { SettingsComponent } from './settings-component/settings-component.component';
 import { PageNotFoundComponent } from './page-not-found-component/page-not-found-component.component';
 import { HomePageComponent } from './DashboardComponent/home-page-component/home-page-component.component';
+import { SharedModule } from "src/app/shared/shared.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     SummaryCardComponent,
     ExpenseChartComponent,
     GoalProgressComponent,
@@ -30,8 +30,9 @@ import { HomePageComponent } from './DashboardComponent/home-page-component/home
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    SharedModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
