@@ -14,6 +14,7 @@ import { SettingsComponent } from './settings-component/settings-component.compo
 import { PageNotFoundComponent } from './page-not-found-component/page-not-found-component.component';
 import { HomePageComponent } from './DashboardComponent/home-page-component/home-page-component.component';
 import { SharedModule } from "src/app/shared/shared.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SharedModule } from "src/app/shared/shared.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule
 ],
   providers: [],
   bootstrap: [AppComponent]
