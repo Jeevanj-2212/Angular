@@ -4,8 +4,8 @@ import { ExpenseChartComponent } from './DashboardComponent/expense-chart-compon
 import { PageNotFoundComponent } from './page-not-found-component/page-not-found-component.component';
 import { HomePageComponent } from './DashboardComponent/home-page-component/home-page-component.component';
 import { NavbarComponent } from './shared/navbar-component/navbar-component.component';
-import { GoalFormComponent } from './GoalTrackerComponent/goal-form-component/goal-form-component.component';
-import { GoalProgressComponent } from './DashboardComponent/goal-progress-component/goal-progress-component.component';
+import { IncomeFormComponent } from './IncomeTrackerComponent/income-form-component/income-form-component.component';
+import { IncomeProgressComponent } from './DashboardComponent/IncomeDisplayComponent/income-progress-component.component';
 import { SummaryCardComponent } from './DashboardComponent/summary-card-component/summary-card-component.component';
 import { SettingsComponent } from './settings-component/settings-component.component';
 import { TransactionFormComponent } from './TransactionComponent/transaction-form-component/transaction-form-component.component';
@@ -15,9 +15,9 @@ const routes: Routes = [
  
   { path: '', redirectTo: 'HomePage', pathMatch: 'full' },
   { path: 'HomePage', component: HomePageComponent },
-  { path: 'GoalProgress', component: GoalProgressComponent },
+  { path: 'IncomeProgress', component: IncomeProgressComponent },
   { path: 'SummaryCard', component: SummaryCardComponent },
-  { path: 'goalTracker', component: GoalFormComponent },
+  { path: 'incomeTracker', component: IncomeFormComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'transactionForm', component: TransactionFormComponent },
   { path: 'transactionList', component: TransactionListComponent },

@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 
 import { SummaryCardComponent } from './DashboardComponent/summary-card-component/summary-card-component.component';
 import { ExpenseChartComponent } from './DashboardComponent/expense-chart-component/expense-chart-component.component';
-import { GoalProgressComponent } from './DashboardComponent/goal-progress-component/goal-progress-component.component';
+import { IncomeProgressComponent } from './DashboardComponent/IncomeDisplayComponent/income-progress-component.component';
 import { TransactionListComponent } from './TransactionComponent/transaction-list-component/transaction-list-component.component';
 import { TransactionFormComponent } from './TransactionComponent/transaction-form-component/transaction-form-component.component';
-import { GoalFormComponent } from './GoalTrackerComponent/goal-form-component/goal-form-component.component';
+import { IncomeFormComponent } from './IncomeTrackerComponent/income-form-component/income-form-component.component';
 import { SettingsComponent } from './settings-component/settings-component.component';
 import { PageNotFoundComponent } from './page-not-found-component/page-not-found-component.component';
 import { HomePageComponent } from './DashboardComponent/home-page-component/home-page-component.component';
@@ -21,10 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     SummaryCardComponent,
     ExpenseChartComponent,
-    GoalProgressComponent,
+    IncomeProgressComponent,
     TransactionListComponent,
     TransactionFormComponent,
-    GoalFormComponent,
+    IncomeFormComponent,
     SettingsComponent,
     PageNotFoundComponent,
     HomePageComponent
