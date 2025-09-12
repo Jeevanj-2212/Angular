@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// ✅ Define custom primary palette
+$custom-primary: mat.define-palette((
+  50: #e0eaf5,
+  100: #b3cde6,
+  200: #80add6,
+  300: #4d8dc6,
+  400: #2675b9,
+  500: #00509e,
+  600: #004080,
+  700: #003366,
+  800: #00264d,
+  900: #001933,
+  contrast: (
+    50: black,
+    100: black,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+));
+
+// ✅ Define white accent palette with required hues
+$white-palette: mat.define-palette((
+  50: #ffffff,
+  100: #ffffff,
+  200: #ffffff,
+  300: #ffffff,
+  400: #ffffff,
+  500: #ffffff,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: black,
+    500: black,
+    600: black,
+    700: black,
+    800: black,
+    900: black,
+    A100: black,
+    A200: black,
+    A400: black,
+    A700: black,
+  )
+));
+
+// ✅ Assign palettes to theme
+$LearningApp-theme: mat.define-light-theme((
+  color: (
+    primary: $custom-primary,
+    accent: $white-palette,
+    warn: mat.define-palette(mat.$red-palette),
+  )
+));
+
+// ✅ Apply theme to all components
+@include mat.all-component-themes($LearningApp-theme);
+
+// ✅ Global styles
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
