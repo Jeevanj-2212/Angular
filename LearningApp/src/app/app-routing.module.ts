@@ -8,9 +8,8 @@ import { IncomeFormComponent } from './IncomeTrackerComponent/income-form-compon
 import { IncomeProgressComponent } from './DashboardComponent/IncomeDisplayComponent/income-progress-component.component';
 import { SummaryCardComponent } from './DashboardComponent/summary-card-component/summary-card-component.component';
 import { SettingsComponent } from './settings-component/settings-component.component';
-import { TransactionFormComponent } from './TransactionComponent/transaction-form-component/transaction-form-component.component';
-import { TransactionListComponent } from './TransactionComponent/transaction-list-component/transaction-list-component.component';
-
+import { ExpenditureFormComponent } from './ExpenditureComponent/transaction-form-component/expenditure-form-component.component';
+import { ExpenditureListComponent } from './ExpenditureComponent/transaction-list-component/expenditure-list-component.component';
 const routes: Routes = [
  
   { path: '', redirectTo: 'HomePage', pathMatch: 'full' },
@@ -19,8 +18,8 @@ const routes: Routes = [
   { path: 'SummaryCard', component: SummaryCardComponent },
   { path: 'incomeTracker', component: IncomeFormComponent },
   { path: 'settings', component: SettingsComponent },
-  { path: 'transactionForm', component: TransactionFormComponent },
-  { path: 'transactionList', component: TransactionListComponent },
+  { path: 'ExpenditureForm', component: ExpenditureFormComponent },
+  { path: 'ExpenditureList', component: ExpenditureListComponent },
 
 
   { path: 'expense-chart', component: ExpenseChartComponent },

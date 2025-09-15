@@ -1,1 +1,18 @@
-<p>Income-form-component works!</p>
+<form [formGroup]="incomeForm" (ngSubmit)="onSubmit()" class="form-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Income Source</mat-label>
+    <input matInput formControlName="source" placeholder="e.g. Freelancing">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Amount</mat-label>
+    <input matInput formControlName="amount" type="number" placeholder="e.g. 5000">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Date</mat-label>
+    <input matInput formControlName="date" type="date">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+</form>
