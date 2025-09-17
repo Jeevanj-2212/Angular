@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-
-
-
-
+import { IncomeData } from './income.model';
 @Component({
   selector: 'app-Income-form-component',
   templateUrl: './income-form-component.component.html',
@@ -12,10 +8,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 })
 export class IncomeFormComponent implements OnInit {
   incomeForm!: FormGroup
+  incomeSource: string[] = ['Salary', 'Business', 'Investment', 'Other'];
+
+
 
   constructor() { }
 
   ngOnInit(): void {
+    
     this.incomeForm = new FormGroup ( {
        source : new FormControl(''),
        amount : new FormControl(''),
@@ -23,7 +23,13 @@ export class IncomeFormComponent implements OnInit {
     });
   }
   onSubmit() {
-     console.log(this.incomeForm.value);
+    const val= this.incomeForm.value;
+    const incomeMap = new Map<String,any>([
+      ['source',val.source],
+      ['amount',val.amount],
+      ['date',val.date]
+    ])
+     console.log(incomeMap);
   }
 
 }

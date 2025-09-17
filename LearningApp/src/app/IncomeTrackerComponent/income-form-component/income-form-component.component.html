@@ -1,7 +1,13 @@
 <form [formGroup]="incomeForm" (ngSubmit)="onSubmit()" class="form-container">
+  <h2 class="formHeading">Income</h2>
+
   <mat-form-field appearance="fill">
     <mat-label>Income Source</mat-label>
-    <input matInput formControlName="source" placeholder="e.g. Freelancing">
+    <mat-select formControlName="source">
+      <mat-option *ngFor="let src of incomeSource" [value]="src">
+        {{ src }}
+      </mat-option> 
+    </mat-select>
   </mat-form-field>
 
   <mat-form-field appearance="fill">
