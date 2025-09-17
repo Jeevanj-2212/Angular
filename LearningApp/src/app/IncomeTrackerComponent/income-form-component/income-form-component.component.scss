@@ -3,9 +3,15 @@
   flex-direction: column;
   gap: 16px;
   max-width: 400px;
-  margin: 0 auto;
-  padding: 16px; // Adds space inside the border
-  border: 3px solid #00509e; // Solid border with your theme's primary color
-  border-radius: 8px; // Optional: rounded corners
-  background-color: #f5faff; // Optional: soft background for contrast
+  margin: 20px auto;
+  padding: 16px; /* Adds space inside the border */
+  border: 3px solid #00509e; /* Solid border with your theme's primary color */
+  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #f5faff; /* Optional: soft background for contrast */
+}
+
+.formHeading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
 }

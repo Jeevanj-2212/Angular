@@ -18,6 +18,10 @@ import { PageNotFoundComponent } from './page-not-found-component/page-not-found
 import { HomePageComponent } from './DashboardComponent/home-page-component/home-page-component.component';
 import { SharedModule } from "src/app/shared/shared.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -40,8 +44,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatInputModule
-
+    MatInputModule,
+    MatToolbarModule,
+    MatOptionModule,
+    MatSelectModule
 ],
   providers: [],
   bootstrap: [AppComponent]
