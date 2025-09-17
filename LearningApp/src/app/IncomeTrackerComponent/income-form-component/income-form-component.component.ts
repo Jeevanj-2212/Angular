@@ -24,6 +24,7 @@ export class IncomeFormComponent implements OnInit {
   }
   onSubmit() {
     const val= this.incomeForm.value;
+    console.log(val);
     const incomeMap = new Map<String,any>([
       ['source',val.source],
       ['amount',val.amount],
